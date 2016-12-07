@@ -152,7 +152,7 @@ function respond() {
   }
   else if(request.text && botRegexGimli.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/eZ129yo.jpg");
+    postMessage("");
     this.res.end();
   }
   else if(request.text && botRegexCC.test(request.text)) {
