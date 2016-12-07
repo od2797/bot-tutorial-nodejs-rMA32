@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/advance/;botRegexBuns = /^\/Buns/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
@@ -100,9 +100,9 @@ function respond() {
     postMessage("https://docs.google.com/document/d/1fGQNGDMZEUkjw2eGxhFfhK2AVtBkscwYTiZqytM6glo/");
     this.res.end();
   } 
-  else if(request.text && botRegexGTA.test(request.text)) {
+  else if(request.text && botRegexBuns.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
+    postMessage("http://sfscratch.com/wp-content/uploads/2014/08/shutterstock_54298804.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
