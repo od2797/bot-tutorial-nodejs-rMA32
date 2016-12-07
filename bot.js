@@ -6,9 +6,9 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexBuns = /^\/Buns/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/advance/;botRegexBuns = /^\/buns/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botCheeks = /^\/cheeks/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
+      botRegexSiege = /^\/siege/; botRegexSlaw = /^\/slaw/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
@@ -80,9 +80,9 @@ function respond() {
     this.res.end();
   } 
   
-  else if(request.text && botRegexOW.test(request.text)) {
+  else if(request.text && botRegexSlaw.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/maddenrating/");
+    postMessage("http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2009/2/10/0/SH1206-1_Mint-Broccoli-Slaw_s4x3.jpg.rend.sniipadlarge.jpeg");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -145,9 +145,9 @@ function respond() {
     postMessage("OBJ*");
     this.res.end();
   } 
-  else if(request.text && botDuck.test(request.text)) {
+  else if(request.text && botCheeks.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
+    postMessage("http://pm1.narvii.com/6102/7014afd7a7273011a229b5dc99038adf6484be73_hq.jpg");
     this.res.end();
   }
   else if(request.text && botRegexCC.test(request.text)) {
