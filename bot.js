@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/smb/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/sim/; 
       botRegexSlut = /^\/youtube/; botRegexStop = /^\/cheese/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/forum/;
+      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/bowl/; botRegexBrye = /^\/forum/;
       botRegexGian = /^\/cheeks/; botRegexScrotes = /^\/buns/; botRegexShaki = /^\/slaw/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -45,7 +45,7 @@ function respond() {
   } 
   else if(request.text && botRegexSlam.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://pbs.twimg.com/profile_images/587294731471757313/ZpI5PfKq.jpg");
+    postMessage("Omar 4 - Justin 2 - Kyle P. 1");
     this.res.end();
   } 
   else if(request.text && botRegexDaf.test(request.text)) {
