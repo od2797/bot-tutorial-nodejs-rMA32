@@ -9,14 +9,14 @@ function respond() {
       botRegexAd=/^\/welcome/;botRegexGTA = /^\/cc/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/gimli/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/smb/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/sim/; 
-      botRegexSlut = /^\/slut/; botRegexStop = /^\/cheese/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
+      botRegexSlut = /^\/youtube/; botRegexStop = /^\/cheese/;
+      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/forum/;
       botRegexGian = /^\/cheeks/; botRegexScrotes = /^\/buns/; botRegexShaki = /^\/slaw/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
-                ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
+                ,"BAL","LDN","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","LA","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -25,7 +25,7 @@ function respond() {
   }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    postMessage("https://www.youtube.com/channel/UChOJLaNQWQwT_XQzkLWkRig");
     this.res.end();
   } 
   else if(request.text && botRegexStop.test(request.text)) {
@@ -55,7 +55,7 @@ function respond() {
   } 
   else if(request.text && botRegexBrye.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/600x490.jpeg.b31d5153fb474d9bb18dd51b3d650afe.large");
+    postMessage("http://daddyleagues.com/smb/forum");
     this.res.end();
   } 
   else if(request.text && botRegexGian.test(request.text)) {
