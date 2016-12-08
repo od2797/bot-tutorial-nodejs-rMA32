@@ -102,7 +102,7 @@ function respond() {
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Crooked Commish Elijah");
+    postMessage("#CrookedCommishElijah");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
