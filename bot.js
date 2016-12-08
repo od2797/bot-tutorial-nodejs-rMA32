@@ -5,13 +5,13 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/roster/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegexAd=/^\/advance/;botRegexGTA = /^\/cc/; botRegexSC = /^\/schedule/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/gimli/;
+      botRegexP = /^\/player/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
-      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
+      botRegexSlut = /^\/slut/; botRegexStop = /^\/cheese/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
-      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
+      botRegexGian = /^\/cheeks/; botRegexScrotes = /^\/buns/; botRegexShaki = /^\/slaw/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -30,7 +30,7 @@ function respond() {
   } 
   else if(request.text && botRegexStop.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Stop appropriating black culture");
+    postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {
@@ -60,17 +60,17 @@ function respond() {
   } 
   else if(request.text && botRegexGian.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/9V6ZnvD.png");
+    postMessage("http://pm1.narvii.com/6102/7014afd7a7273011a229b5dc99038adf6484be73_hq.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexScrotes.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1006x1340.jpeg.730381e4280e4028b8375432af14f39f.large");
+    postMessage("http://sfscratch.com/wp-content/uploads/2014/08/shutterstock_54298804.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexShaki.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
+    postMessage("http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2009/2/10/0/SH1206-1_Mint-Broccoli-Slaw_s4x3.jpg.rend.sniipadlarge.jpeg");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
@@ -102,7 +102,7 @@ function respond() {
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
+    postMessage("Crooked Commish Elijah");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
@@ -147,7 +147,7 @@ function respond() {
   } 
   else if(request.text && botDuck.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
+    postMessage("https://i.groupme.com/959x960.jpeg.72082c400c774c7b825de27df9751c08");
     this.res.end();
   }
   else if(request.text && botRegexCC.test(request.text)) {
