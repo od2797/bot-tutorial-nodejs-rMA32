@@ -5,10 +5,10 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/roster/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/cc/; botRegexSC = /^\/schedule/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/gimli/;
-      botRegexP = /^\/player/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/depth/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegexAd=/^\/welcome/;botRegexGTA = /^\/cc/; botRegexSC = /^\/sched/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/gimli/;
+      botRegexP = /^\/play/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/SMB/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegexSiege = /^\/siege/; botRegexOW = /^\/sim/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/cheese/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/cheeks/; botRegexScrotes = /^\/buns/; botRegexShaki = /^\/slaw/;
@@ -82,7 +82,7 @@ function respond() {
   
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/maddenrating/");
+    postMessage("SEND YOUR SIM SCORES TO @Elijah");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -92,7 +92,7 @@ function respond() {
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
+    postMessage("http://giphy.com/gifs/welcome-to-the-dollhouse-eKOdSuV7y7XQQ");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
@@ -127,7 +127,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
+    postMessage("http://www.daddyleagues.com/smb");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
