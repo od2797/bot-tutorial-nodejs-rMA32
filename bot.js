@@ -7,10 +7,10 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/ros/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/welcome/;botRegexGTA = /^\/cc/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/gimli/;
-      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/smb/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegexP = /^\/ply/i;  botRegexTw = /^\/t/i; botRegexSb = /^\/smb/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/sim/; 
       botRegexSlut = /^\/youtube/; botRegexStop = /^\/cheese/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/bowl/; botRegexBrye = /^\/forum/;
+      botRegexProp = /^\/prop/;botRegexKys = /^\/help/; botRegexSlam = /^\/bowl/; botRegexBrye = /^\/forum/;
       botRegexGian = /^\/cheeks/; botRegexScrotes = /^\/buns/; botRegexShaki = /^\/slaw/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/booty/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -40,7 +40,7 @@ function respond() {
   }
   else if(request.text && botRegexKys.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.wikihow.com/Tie-a-Noose");
+    postMessage("/ros and then team abbreviation for team roster - /sch and then team abbreviation for team schedule - /users for owner list - /ply and then player last name for player search - /t and then twitch name to link twitch - /rules for rulebook - /smb for daddyleague homepage - /gimli for cutest dog ever");
     this.res.end();
   } 
   else if(request.text && botRegexSlam.test(request.text)) {
