@@ -40,7 +40,7 @@ function respond() {
   }
   else if(request.text && botRegexKys.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("COMMAND LIST: /ros and then team abbreviation for team roster - /sch and then team abbreviation for team schedule - /users for owner list - /ply and then player name for player search - /twitch and then twitch name to link twitch - /rules for rulebook - /smb for daddyleague homepage - /gimli for cutest dog ever");
+    postMessage("COMMAND LIST: /ros and then team abbreviation for team roster <br> /sch and then team abbreviation for team schedule <br> /users for owner list <br> /ply and then player name for player search <br> /twitch and then twitch name to link twitch <br> /rules for rulebook <br> /smb for daddyleague homepage <br> /gimli for cutest dog ever");
     this.res.end();
   } 
   else if(request.text && botRegexSlam.test(request.text)) {
