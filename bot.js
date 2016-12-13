@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/ros/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/welcome/;botRegexGTA = /^\/cc/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/gimli/;
-      botRegexP = /^\/ply/i;  botRegexTw = /^\/t/i; botRegexSb = /^\/smb/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/smb/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/sim/; 
       botRegexSlut = /^\/youtube/; botRegexStop = /^\/cheese/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/help/; botRegexSlam = /^\/bowl/; botRegexBrye = /^\/forum/;
@@ -40,7 +40,7 @@ function respond() {
   }
   else if(request.text && botRegexKys.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("/ros and then team abbreviation for team roster - /sch and then team abbreviation for team schedule - /users for owner list - /ply and then player last name for player search - /t and then twitch name to link twitch - /rules for rulebook - /smb for daddyleague homepage - /gimli for cutest dog ever");
+    postMessage("COMMAND LIST: /ros and then team abbreviation for team roster - /sch and then team abbreviation for team schedule - /users for owner list - /ply and then player name for player search - /twitch and then twitch name to link twitch - /rules for rulebook - /smb for daddyleague homepage - /gimli for cutest dog ever");
     this.res.end();
   } 
   else if(request.text && botRegexSlam.test(request.text)) {
