@@ -82,7 +82,7 @@ function respond() {
   
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("SEND YOUR SIM SCORES TO @Elijah");
+    postMessage("SEND YOUR SIM SCORES TO @RJ");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -102,7 +102,7 @@ function respond() {
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("#CrookedCommishElijah");
+    postMessage("There is NOTHING wrong with receiving constructive criticism, especially if it comes from the Commish or an Admin. We know the rules better than anyone and if we message you about something, accept the feedback and try to implement it into your game. Everybody here wants a fair, sim game, so let's make sure we are accepting criticism and not fighting it.");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
